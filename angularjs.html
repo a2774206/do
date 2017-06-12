@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META http-equiv="Page-Enter" CONTENT="RevealTrans(Duration=4,Transition=12)" charset="UTF-8">
+<meta >
+		<title></title>
+		<style>
+		*{margin: 0;font-family: "微软雅黑";}
+		body{background: #888787}
+			table{border-collapse: collapse;}
+			table tr{display: inline-block;margin-top: 6px;}
+			.even{background: #d4d4d4;}
+			.odd{background: #F7EBEB;}
+			td{padding: 8px 58px; width:200px}
+			td:first-child{width: 30px;}
+		</style>
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	</head>
+	<body ng-app="bodys"  ng-controller="Myctrl">
+		<div >
+			
+		</div>
+		<div style="width: 100%;height: 150px;background: #D4D4D4;font-size: 30px;text-align: center;line-height: 150px;padding: 0;">
+			Angularjs文档
+		</div>
+		<div style="text-align: center;margin: 2% 0;"><input type="text" placeholder="请输入模糊内容" style="width: 30%;height: 25px;" id="text" ng-model="a11"><input type="button" value="搜 索"  style="width:55px;font-size: 14px;height: 30px;" ng-click="a()" id="button"></div>
+		<div style="padding-left: 20%;">
+			
+			<table ng-repeat='x in datas|filter:a11'>
+				<tr ng-class-even="'even'" ng-class-odd="'odd'">
+					<td ng-bind="x.id+'.'"></td>
+					<td ng-bind="x.name"></td>
+					<td ng-bind="x.aihao"></td>
+				</tr>
+			</table>
+			
+		</div>
+
+	</body>
+	<script>
+			function $(id){
+				if(id.indexOf(".")){
+					id=id.slice(1)
+					console.log(id)
+				return document.getElementById(id);
+				}
+				else{
+					id=id.slice(1)
+					return document.getElementsByClassName(id);
+				}
+				
+			}
+
+			
+			var app=angular.module("bodys",[]);
+			app.controller("Myctrl",function($scope,$http){
+
+			$http.get("js/s.json").success(function(data){
+				
+				$scope.datas=(data);
+				
+			})
+		
+
+		
+			});
+		</script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="top_top">
+			
+		</div>
+		<div class="container ">
+			
+				<div class="header">
+				<center class="panel panel-default">
+					<h2>前端大杂烩 <span class="glyphicon glyphicon-question-sign eee" title="快速指南:点击标题可以进入子页面 子页面所有内容可以双击快速编辑，选择项目-详情-可以用html标签代码书写，使用pre标签可以自动生成代码"></span></h2>
+				</center>
+				</div>
+				<!--主体-->
+				<div class="content">
+					<!--<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>-->
+					<div class="panel panel-default  ">
+						<div class="row1">
+							<div class="col-lg-4 col-xs-4 center tag "><span class="glyphicon glyphicon-plus"></span> 添加标签</div>
+							<div class="col-lg-4 col-xs-4 center"><span class="glyphicon glyphicon-dashboard"></span> 创建时间</div>
+							<div class="col-lg-4 col-xs-4 center"><span class="glyphicon glyphicon-trash"></span> 修改/删除</div>
+						</div>
+						<div id="contents"></div>
+						
+					</div>
+					
+					
+					<!--2774206@qq.com登陆开始 -->
+                    	<div class="modal fade" id="myModal">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						     
+						   <div class="modal-body">
+						      <div style="position: absolute;right: 2rem;top: 0.5rem;"><a href="#" class="close" data-dismiss="modal">x</a></div>
+                            <div>
+								  <ul class="nav nav-tabs" role="tablist">
+								   
+								    
+								    <li role="presentation" class="active"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">验证口令</a></li>
+								  </ul>
+							  <!-- Tab panes -->
+								<div class="tab-content">
+									
+								   <!-- 登陆内容区 -->
+								    <div role="tabpanel" class="tab-pane  active" id="settings">
+								    	<div class="dl">
+								    		
+											  
+											  <div class="form-group">
+											    <label for="password">密码</label>
+											    <input type="password" class="form-control" id="password" placeholder="密码">
+											  </div>
+											  
+											  <button type="button" class="btn btn-default" id="ndenglu">登陆</button>
+											 <span style="margin-left: 1em;color: green;" id="su"></span>
+											
+								    	</div>
+								    </div>
+								</div>
+							</div>
+                               <!--
+                               	作者：2774206@qq.com
+                               	时间：2016-08-18
+                               	描述：
+                               -->
+						      </div>
+						      
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div>
+                    
+                    
+                    <!--登陆结束 -->
+                    
+				</div>
+				<!--主体结束-->
+				<div class="footer"></div>
+				<div class="bc-success">
+					√ 保存成功！
+				</div>
+		</div>
+		<script>
+			
+		</script>
+	</body>
+</html>
