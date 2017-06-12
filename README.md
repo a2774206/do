@@ -1,5 +1,5 @@
 # do   
-jq+bootstrap+php开发记事薄      
+jq+bootstrap+php开发记事薄          
 · 数据库：MySQL       
 · 服务器：Apache/2.4.4 (Win32) PHP/5.4.16     
       
