@@ -298,7 +298,7 @@
 	}
 
 	function sousuo() {
-		$(".sousuo1").unbind().bind("click", function() {
+		$("#sea").unbind().bind("keydown", function() {
 
 				var val = $("#sea").val();
 				$.ajax({
